@@ -1,4 +1,4 @@
-"use-strict";
+"use strict";
 
 const output = document.querySelector(".output");
 const start = document.querySelector(".start");
@@ -11,18 +11,32 @@ const speechRecognition =
 const recognition = new speechRecognition();
 recognition.lang = "en";
 recognition.interimResults = true;
-recognition.continous = true;
+recognition.continuous = true;
+
+let latestTranscript = "";
+let isListening = false;
 
 start.addEventListener("click", function () {
   recognition.start();
   console.log("recognition started");
+  isListening = true;
 });
 
 recognition.onresult = (e) => {
-  const transcript = e.results[0][0].transcript;
-  console.log(transcript);
-  output.textContent = transcript;
-  checkTranscript(transcript);
+  latestTranscript = "";
+  for (let i = 0; i < e.results.length; i++) {
+    latestTranscript = e.results[i][0].transcript;
+  }
+
+  output.textContent = latestTranscript;
+  console.log(latestTranscript);
+
+  setTimeout(function () {
+    latestTranscript = "";
+    console.log("New Latest Transcript");
+    console.log(latestTranscript);
+  }, 3000);
+  checkTranscript(latestTranscript);
 };
 
 let interval;
@@ -47,7 +61,7 @@ const randomColor = function () {
   return color;
 };
 
-startChaningColor = function () {
+const startChaningColor = function () {
   if (!interval) {
     interval = setInterval(changeBgColor, 500);
   }
@@ -57,7 +71,7 @@ startChaningColor = function () {
   }
 };
 
-stopChangingColor = function () {
+const stopChangingColor = function () {
   clearInterval(interval);
   interval = null;
   body.style.backgroundColor = "white";
