@@ -3,7 +3,7 @@
 ![Logox](https://github.com/isg32/VoiceBank-Voice-Assited-Banking/assets/95901240/17cf45a1-9549-42d6-b95e-582cf04db2f0)
 
 ## Overview
-The [VAB - Voice Assisted Banking](https://659598845827350083ff2e01--imaginative-alpaca-3cbab3.netlify.app/) app is a simple banking application that allows users to log in, view their account balance, check recent transactions, transfer money to other accounts, request a loan, and close their account. The application is built using HTML, CSS, and JavaScript
+The [VAB - Voice Assisted Banking](https://voice-bank-voice-assited-banking.vercel.app/) app is a simple banking application that allows users to log in, view their account balance, check recent transactions, transfer money to other accounts, request a loan, and close their account. The application is built using HTML, CSS, and JavaScript
 
 ## Features That Matter
 1. **Login:** Log in with your username and PIN. No room for mistaken credentials.
@@ -29,4 +29,4 @@ The [VAB - Voice Assisted Banking](https://659598845827350083ff2e01--imaginative
 This app was born out of a JavaScript course on Udemy. It's not fancy, but it gets the job done and is mainly for Learning purposes. Dive in, explore, and test it out.
 
 ## Explore the VAB App
-[Bankist App](https://659598845827350083ff2e01--imaginative-alpaca-3cbab3.netlify.app/)
+[Bankist App](https://voice-bank-voice-assited-banking.vercel.app/)
