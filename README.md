@@ -1,5 +1,7 @@
 # VAB App
 
+![Logox](https://github.com/isg32/VoiceBank-Voice-Assited-Banking/assets/95901240/17cf45a1-9549-42d6-b95e-582cf04db2f0)
+
 ## Overview
 The [VAB - Voice Assisted Banking](https://659598845827350083ff2e01--imaginative-alpaca-3cbab3.netlify.app/) app is a simple banking application that allows users to log in, view their account balance, check recent transactions, transfer money to other accounts, request a loan, and close their account. The application is built using HTML, CSS, and JavaScript
 
