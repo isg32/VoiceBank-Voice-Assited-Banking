@@ -3,21 +3,300 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Voice Bank</title>
-    <link rel="stylesheet" href="src/styles/style.css" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="img/icons.svg" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Bankist | When Banking meets Minimalist</title>
+
+    <script defer src="script.js"></script>
   </head>
   <body>
-    <div class="speech-stuff">
-      <div>
-        <h1>Say Something...</h1>
+    <header class="header">
+      <nav class="nav">
+        <img
+          src="img/Logox.png"
+          alt="Bankist logo"
+          class="nav__logo"
+          id="logo"
+          data-version-number="3.0"
+        />
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a class="nav__link" href="#section--1">Features</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--2">Operations</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--3">Getting Started</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--btn btn--show-modal" href="header"
+              >Open account</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__title">
+        <h1>
+          When
+          <!-- Green highlight effect -->
+          <span class="highlight">banking</span>
+          meets<br />
+          <span class="highlight">Your Voice</span>
+        </h1>
+        <h4>A Crazier banking experience for a Lazy life.</h4>
+        <button class="btn--text btn--scroll-to">Learn more &DownArrow;</button>
+        <img
+          src="img/Card x.png"
+          class="header__img"
+          alt="Minimalist bank items"
+        />
       </div>
-      <div>
-        <p class="output"></p>
+    </header>
+
+    <section class="section" id="section--1">
+      <div class="section__title">
+        <h2 class="section__description">Features</h2>
+        <h3 class="section__header">
+          More Than you need in a modern bank and more.
+        </h3>
       </div>
-      <div>
-        <button class="start">Start speaking</button>
+
+      <div class="features">
+        <img
+          src="img/digital-lazy.jpg"
+          data-src="img/digital.jpg"
+          alt="Computer"
+          class="features__img lazy-img"
+        />
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-monitor"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">100% digital bank</h5>
+          <p>
+            This is an OSS project, Where your Virtual bank is here, with you.
+            Whence the other, 
+            who are they? Some often reject the accusers by further rejecting them
+            we are leading debts.
+          </p>
+        </div>
+
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-trending-up"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">Watch the Technology grow</h5>
+          <p>
+            But they do not know what the pleasures of pains are when the pains are said to be flight
+            inventor from? There is no incident of his never following this mating
+            to some!
+          </p>
+        </div>
+        <img
+          src="img/grow-lazy.jpg"
+          data-src="img/grow.jpg"
+          alt="Plant"
+          class="features__img lazy-img"
+        />
+
+        <img
+          src="img/card-lazy.jpg"
+          data-src="img/card.jpg"
+          alt="Credit card"
+          class="features__img lazy-img"
+        />
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-credit-card"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">Free debit card included</h5>
+          <p>
+            Just Kidding, No this is not a real Bank, this is a prototype.
+            It will happen that the consequences are worse than those we can assume the said flight
+            inventor from
+          </p>
+        </div>
       </div>
+    </section>
+
+    <section class="section" id="section--2">
+      <div class="section__title">
+        <h2 class="section__description">Operations</h2>
+        <h3 class="section__header">
+          Everything as simple as possible, but no simpler.
+        </h3>
+      </div>
+
+      <div class="operations">
+        <div class="operations__tab-container">
+          <button
+            class="btn operations__tab operations__tab--1 operations__tab--active"
+            data-tab="1"
+          >
+            <span>01</span>Speak Transfers
+          </button>
+          <button class="btn operations__tab operations__tab--2" data-tab="2">
+            <span>02</span>Speak Loans
+          </button>
+          <button class="btn operations__tab operations__tab--3" data-tab="3">
+            <span>03</span>Speak Closing
+          </button>
+        </div>
+        <div
+          class="operations__content operations__content--1 operations__content--active"
+        >
+          <div class="operations__icon operations__icon--1">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-upload"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">
+            Tranfser money to anyone, instantly! Just speak it.
+          </h5>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+        </div>
+
+        <div class="operations__content operations__content--2">
+          <div class="operations__icon operations__icon--2">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-home"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">
+            Buy a home or make your dreams come true, with instant talk.
+          </h5>
+          <p>
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+          </p>
+        </div>
+        <div class="operations__content operations__content--3">
+          <div class="operations__icon operations__icon--3">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-user-x"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">
+            No longer need your account? No problem! Commans it instantly.
+          </h5>
+          <p>
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="section--3">
+      <div class="section__title section__title--testimonials">
+      
+      <h2 class="section__description">Wanna Try For Yourself?</h2>
+        <div class="speech-stuff">
+          <div>
+            <h3 class="section__header">
+              Click the Speak button and start speaking transactions.
+            </h3>
+          </div>
+          <div>
+            <p class="output"></p>
+          </div>
+          <center>
+          <div>
+            <button class="btn start">Start speaking</button>
+          </div>
+        </center> 
+        </div>
+        <script src="src/js/script.js"></script> 
+    </div></div>
+    </section>
+
+    <section class="section section--sign-up">
+      <div class="section__title">
+        <h3 class="section__header">
+          The best day to join Project-VAB was one year ago. The second best is
+          today!
+        </h3>
+      </div>
+      <button class="btn btn--show-modal">Open your free account today!</button>
+    </section>
+
+    <footer class="footer">
+      <ul class="footer__nav">
+        <li class="footer__item">
+          <a class="footer__link" href="#">About</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Pricing</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Terms of Use</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Privacy Policy</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Careers</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Blog</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Contact Us</a>
+        </li>
+      </ul>
+      <img src="img/icon.png" alt="Logo" class="footer__logo" />
+      <p class="footer__copyright">
+        &copy; Copyrighted by
+        <a
+          class="footer__link twitter-link"
+          target="_blank"
+          href=""
+          >Jonas Schmedtmann, Now By Us</a>. Used for learning. Didn't claim thy product.
+      </p>
+    </footer>
+
+    <div class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal__header">
+        Open your bank account <br />
+        in just <span class="highlight">5 minutes</span>
+      </h2>
+      <form class="modal__form">
+        <label>First Name</label>
+        <input type="text" />
+        <label>Last Name</label>
+        <input type="text" />
+        <label>Email Address</label>
+        <input type="email" />
+        <a href="account_index.html" class="btn btn--link" id="open--account"
+          >Existing Account?</a
+        >
+        <button class="btn">Next step &rarr;</button>
+      </form>
     </div>
-    <script src="src/js/script.js"></script>
+    <div class="overlay hidden"></div>
   </body>
 </html>
