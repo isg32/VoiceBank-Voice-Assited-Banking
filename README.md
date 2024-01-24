@@ -26,5 +26,5 @@ The [VAB - Voice Assisted Banking](https://659598845827350083ff2e01--imaginative
 
 This app was born out of a JavaScript course on Udemy. It's not fancy, but it gets the job done and is mainly for Learning purposes. Dive in, explore, and test it out.
 
-## Explore the Bankist App
+## Explore the VAB App
 [Bankist App](https://659598845827350083ff2e01--imaginative-alpaca-3cbab3.netlify.app/)
